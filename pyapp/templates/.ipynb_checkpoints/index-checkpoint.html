@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Image Align</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='image-align.css') }}" type="text/css"/>
+</head>
+<body>
+    <div class="encompassing-window">
+        <div class="statictext">Home Page!</div>
+        <div class="box-window">
+            <div><img src="/static/1.jpg"></div>
+        </div>
+        <div class="box-window">
+            <div><img src="/static/2.jpg"></div>
+        </div>
+    </div>
+    <form action="{{ url_for('search') }}" method="GET">
+        <input type="submit" value="Launch Python Application">
+    </form>
+</body>
+</html>
+
+
+
